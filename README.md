@@ -22,3 +22,20 @@ counterlock : direction of the wedges
 shadow : shadow for each wedge
 autopct: %1.1f%% when u want to specify a format for the percentage of each data element.
 
+BARCHART:
+Used for comparison of different points and takes both the values to be plotted (X-coordinates) and its corresponding height(Y-Coordinates)
+
+Parameters:
+colors:Colors for each bar
+aligh:where the values has to be aligned(left,right or center)
+
+HISTOGRAM:
+For categorising a distribution of data into bins.Each bin will have a subset of data and with that we can actually see the progression of data from one bin to another.
+
+Parameters:
+x:data points
+range:The range which we are actually concerned about.Outside the range all values will be treated as outliers.
+color:we can control the color of the bins
+histtype:This could be a bar chart(default),stepped bar chart,filled stepped graph
+align:alignment of the bars(of the bins)along the baseline.
+label:label for the histogram and call to plt.legend():label will not be defined until a call to the legend is done.
