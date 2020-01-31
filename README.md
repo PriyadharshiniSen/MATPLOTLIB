@@ -39,3 +39,12 @@ color:we can control the color of the bins
 histtype:This could be a bar chart(default),stepped bar chart,filled stepped graph
 align:alignment of the bars(of the bins)along the baseline.
 label:label for the histogram and call to plt.legend():label will not be defined until a call to the legend is done.
+
+BOXPLOT:
+Depicts a group of numbers through quartiles (three points dividing a group into four equal parts).There can be lines called whiskers indicating data outside the upper and lower quartiles.They are called outliers.
+
+Parameters:
+data:data points 
+notch: True/False whether to display the notched box plot which is actually measured by calculating the notch Height = median +/- 1.57 x IQR/sqrt of n. Any random sample data inside the InterQuartileRange will have similar median.If the shapes and the ranges match then it implies that their variance is equal.
+
+if the notches overlap then the data is from the similar population.Otherwise its from a different population.
