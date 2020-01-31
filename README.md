@@ -47,4 +47,23 @@ Parameters:
 data:data points 
 notch: True/False whether to display the notched box plot which is actually measured by calculating the notch Height = median +/- 1.57 x IQR/sqrt of n. Any random sample data inside the InterQuartileRange will have similar median.If the shapes and the ranges match then it implies that their variance is equal.
 
-if the notches overlap then the data is from the similar population.Otherwise its from a different population.
+if the notches overlap then the data is from the similar population.Otherwise its from a different population (data is skewed and the medians differ)
+
+https://stackoverflow.com/questions/38794406/why-is-matplotlibs-notched-boxplot-folding-back-on-itself
+
+whis:we can adjust the width of the whiskers 
+sym:to display the outliers with a different image and colour.
+
+SCATTER PLOT:
+Clusters of data rather than trends.Mainly used to see the data patterns.
+
+Parameters:
+data: both x and Y
+marker:display marker for the data points.
+c:color of the marker.
+we can even create a color array to represent different colours for each group.
+correlation:
+  done with the polyfit() function.
+  This will return a vector of coefficients p(for a p-1 degree polymonial:2 coefficients for a 1 degree polynomia) that minimizes the least squares error.
+  This could then be used to plot a line.
+  https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html
